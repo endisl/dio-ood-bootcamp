@@ -4,6 +4,11 @@ public class Mentoring extends Content {
 
     private LocalDate date;
 
+    public Mentoring(String title, String description, LocalDate date) {
+        super(title, description);
+        this.date = date;
+    }
+
     @Override
     public double computeXP() {
         return XP_INITIAL + 25.0;

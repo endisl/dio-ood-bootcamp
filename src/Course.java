@@ -2,6 +2,11 @@ public class Course extends Content {
 
     private int hoursDuration;
 
+    public Course(String title, String description, int hoursDuration) {
+        super(title, description);
+        this.hoursDuration = hoursDuration;
+    }
+
     @Override
     public double computeXP() {
         return XP_INITIAL * hoursDuration;
